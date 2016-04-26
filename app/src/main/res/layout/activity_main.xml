@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:text="@string/btn_name"
+            android:textColor="#f00"
+            android:background="@drawable/selector_btn_bg"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击变成"
+            android:padding="5dp"
+            android:textColor="#f00"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:text="@string/btn_name"
+            android:textColor="#f00"
+            android:background="@drawable/selector_btn_bg_pressed"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_content"
+        android:padding="10dp"
+        android:textColor="#f00"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="linear-直线渐变:开始色#f00,中间色#0f0,最终色#00f"
+        android:padding="10dp"
+        android:textColor="#f00"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_gradient_linear"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="radial-圆形渐变:开始色#f00,中间色#0f0,最终色#00f"
+        android:padding="10dp"
+        android:textColor="#f00"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape_gradient_radial"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_gradient_radial_origin"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sweep-渐变:开始色#f00,中间色#0f0,最终色#00f"
+        android:padding="10dp"
+        android:textColor="#f00"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_gradient_sweep"/>
+
+</LinearLayout>

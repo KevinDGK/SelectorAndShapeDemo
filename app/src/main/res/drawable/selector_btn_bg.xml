@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:state_pressed="true" >
+        <shape>
+            <corners
+                android:radius="10dp"
+                />
+            <!-- 渐变 -->
+            <gradient
+                android:startColor="#ff8c00"
+                android:endColor="#ffffff"
+                android:type="radial"
+                android:gradientRadius="100"
+                />
+            <stroke
+                android:color="@android:color/holo_blue_bright"
+                android:dashWidth="2dp"
+                android:width="2dp"
+                android:dashGap="5dp"/>
+        </shape>
+    </item>
+
+
+    <!-- 默认状态 -->
+    <item>
+        <!-- shape节点一般单独写到单独的文件中 -->
+        <shape>
+            <!-- 圆角 -->
+            <corners
+                android:bottomRightRadius="10dp"
+                android:topRightRadius="10dp"
+                />
+
+            <!-- 填充 -->
+            <solid
+                android:color="#FF9E73"
+                />
+
+            <!-- 描边 -->
+            <stroke
+                android:color="@android:color/holo_blue_bright"
+                android:width="2dp"/>
+        </shape>
+    </item>
+
+</selector>
